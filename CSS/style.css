@@ -42,9 +42,10 @@ body .title {
   background-color: #fffcf7;
   color: #ecac47;
   width: 80%;
-  height: 60px;
+  height: 50px;
   border: 1px solid #fffcf7;
   border-radius: 0 0 15px 15px;
+  text-transform: uppercase;
 }
 
 body .title:hover {
@@ -172,5 +173,80 @@ body #hamburger #hamburgerBtn svg {
   color: #ecac47;
   stroke-width: 1;
   stroke: #ecac47;
+}
+
+@media screen and (min-width: 750px) {
+  body {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding-top: 5px;
+  }
+  body .title {
+    width: 95%;
+    height: 60px;
+    border-radius: 0 0 20px 20px;
+  }
+  body .title h1 {
+    font-size: 26px;
+    font-weight: 400;
+    letter-spacing: 2px;
+  }
+  body .allLinks {
+    width: 95%;
+    height: 65%;
+    padding: 30px;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    margin-top: 50px;
+  }
+  body .allLinks #links {
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+  body .allLinks #terms {
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+  }
+  body #hamburger {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    width: 100vw;
+  }
+  body #hamburger #hamburgerBtn {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    background-color: #fffcf7;
+    border-radius: 50%;
+    height: 90px;
+    width: 90px;
+    padding: 0;
+    margin: 10px;
+  }
 }
 /*# sourceMappingURL=style.css.map */

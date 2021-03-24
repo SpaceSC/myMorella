@@ -20,9 +20,10 @@ body {
     background-color: $cream;
     color: $yellow;
     width: 80%;
-    height: 60px;
+    height: 50px;
     border: 1px solid $cream;
     border-radius: 0 0 15px 15px;
+    text-transform: uppercase;
 
     &:hover {
       color: $gray;
@@ -112,6 +113,66 @@ body {
         stroke: $yellow;
       }
     }
+  }
+}
+
+@media screen and (min-width: 750px) {
+  body {
+    justify-content: flex-start;
+    flex-direction: column;
+    padding-top: 5px;
+
+    .title {
+      width: 95%;
+      height: 60px;
+      border-radius: 0 0 20px 20px;
+
+      h1 {
+        font-size: 26px;
+        font-weight: 400;
+        letter-spacing: 2px;
+      }
+      
+    }
+
+    .allLinks {
+      width: 95%;
+      height: 65%;
+      padding: 30px;
+      justify-content: space-between;
+      margin-top: 50px;
+
+      #links {
+        align-items: flex-start;
+      }
+
+      #terms {
+        align-items: flex-end;
+      }
+    }
+
+    #hamburger {
+      position: absolute;
+      top: 5px;
+      right: 5px;
+      display: flex;
+      flex-direction: row-reverse;
+      align-items: flex-start;
+      width: 100vw;
+      
+    
+      #hamburgerBtn {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: $cream;
+        border-radius: 50%;
+        height: 90px;
+        width: 90px;
+        padding: 0;
+        margin: 10px;
+      }
+    } 
   }
 }
 
