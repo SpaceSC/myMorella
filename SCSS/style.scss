@@ -24,6 +24,11 @@ body {
     border: 1px solid $cream;
     border-radius: 0 0 15px 15px;
 
+    &:hover {
+      color: $gray;
+      cursor: pointer;
+    }
+
     h1 {
       font-weight: 300;
     }
@@ -44,6 +49,10 @@ body {
       font-size: 12px;
       font-weight: 300;
       letter-spacing: 2px;
+
+      &:hover {
+        color: $gray;
+      }
     }
 
     #links {
@@ -61,6 +70,47 @@ body {
       justify-content: center;
       align-items: center;
       gap: 20px;
+    }
+  }
+
+  #hamburger {
+    position: absolute;
+    top: 2%;
+    right: 1%;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: flex-start;
+    width: 100vw;
+  
+    #toggle {
+     background-color: $cream!important;
+  
+  
+     #toggleText {
+      color: $yellow!important;
+      }
+    } 
+  
+    #hamburgerBtn {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: $cream;
+      border-radius: 50%;
+      height: 55px;
+      width: 55px;
+      padding: 0;
+      margin: 10px;
+  
+      &:focus{
+        box-shadow: none;
+      }
+  
+      svg {
+        color: $yellow;
+        stroke-width: 1; 
+        stroke: $yellow;
+      }
     }
   }
 }
