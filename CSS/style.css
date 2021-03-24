@@ -47,6 +47,11 @@ body .title {
   border-radius: 0 0 15px 15px;
 }
 
+body .title:hover {
+  color: #757590;
+  cursor: pointer;
+}
+
 body .title h1 {
   font-weight: 300;
 }
@@ -74,6 +79,10 @@ body .allLinks a {
   font-size: 12px;
   font-weight: 300;
   letter-spacing: 2px;
+}
+
+body .allLinks a:hover {
+  color: #757590;
 }
 
 body .allLinks #links {
@@ -109,5 +118,59 @@ body .allLinks #terms {
       -ms-flex-align: center;
           align-items: center;
   gap: 20px;
+}
+
+body #hamburger {
+  position: absolute;
+  top: 2%;
+  right: 1%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  width: 100vw;
+}
+
+body #hamburger #toggle {
+  background-color: #fffcf7 !important;
+}
+
+body #hamburger #toggle #toggleText {
+  color: #ecac47 !important;
+}
+
+body #hamburger #hamburgerBtn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #fffcf7;
+  border-radius: 50%;
+  height: 55px;
+  width: 55px;
+  padding: 0;
+  margin: 10px;
+}
+
+body #hamburger #hamburgerBtn:focus {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+body #hamburger #hamburgerBtn svg {
+  color: #ecac47;
+  stroke-width: 1;
+  stroke: #ecac47;
 }
 /*# sourceMappingURL=style.css.map */
